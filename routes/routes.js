@@ -10,6 +10,8 @@ module.exports = app => {
                 console.log(err)
             }
             else{
+                console.log ("RESULTS FROM MONGOOSE")
+                console.log (result)
                 res.render("index", {renderData : result})
             }
         })
@@ -34,7 +36,7 @@ module.exports = app => {
                     console.log (result)
                 })
                          
-            
+             
                     // db.Article.find({ link: result.title })
                     // // res.send("hello")
                     // .then(foundArticle => {
