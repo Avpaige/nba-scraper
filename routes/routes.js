@@ -34,21 +34,7 @@ module.exports = app => {
                 db.Article.create(result)
                 .then(()=>{
                     console.log (result)
-                })
-                         
-             
-                    // db.Article.find({ link: result.title })
-                    // // res.send("hello")
-                    // .then(foundArticle => {
-                    //     if (!foundArticle.length) {
-                    //         db.Article.create(result)
-                    //             .then(result => {
-                    //                 console.log(result)
-                    //                 res.render("scrape", {renderData : result})
-                    //             })
-                    //             .catch(error => console.log(error));
-                    //     }
-                    // })
+                })           
             })
         })
     })
